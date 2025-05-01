@@ -1,172 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prishant Mantrao - Fractional CTO Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proficient Professionals Inc.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: 'Roboto', sans-serif;
-      background: url('background-image.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
+      background-color: #f5f7fa;
+      color: #333;
     }
     header {
+      background: url('https://img1.wsimg.com/isteam/getty/2190154430?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
       text-align: center;
-      padding: 60px 20px;
-      background-color: rgba(0, 0, 0, 0.6);
     }
-    h1 {
+    header h1 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 3.5rem;
-      margin-bottom: 10px;
+      font-size: 3em;
+      margin: 0 0 10px;
     }
-    p.tagline {
-      font-size: 1.8rem;
-      font-weight: 300;
+    header p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
     }
     section {
       padding: 60px 20px;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-    h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    .content-section {
       max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      margin: auto;
     }
-    .service, .engagement-model {
-      background: rgba(0, 0, 0, 0.8);
-      border-radius: 10px;
-      padding: 20px;
-      width: 250px;
-      margin: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    section h2 {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2em;
+      margin-bottom: 40px;
     }
-    .service h3, .engagement-model h3 {
-      font-size: 1.6rem;
-      margin-bottom: 15px;
+    .intro, .fcto, .benefits {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+    .grid-2col, .grid-3col {
+      display: grid;
+      gap: 20px;
+    }
+    .grid-2col {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .grid-3col {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .table-style {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    .table-style th, .table-style td {
+      border: 1px solid #ddd;
+      padding: 12px 15px;
+      text-align: left;
+    }
+    .cta {
+      background: #0c1e3c;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+     .highlight-section {
+      text-align: center;
+      background-color: #eef2f6;
+    }
+      .table-compare th, .table-compare td {
+      width: 100%;
+      border-collapse: collapse;
+      padding: 15px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    .cta a {
+      background: #ff7b00;
+      padding: 12px 24px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 20px;
     }
     footer {
+      background: #f0f0f0;
       text-align: center;
-      padding: 30px 20px;
-      background-color: rgba(0, 0, 0, 0.8);
-      font-size: 1rem;
-    }
-    .btn {
-      background-color: #ff8c00;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: 600;
-      display: inline-block;
-      transition: background-color 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #e07b00;
-    }
-    .highlight {
-      color: #ff8c00;
-      font-weight: 600;
-    }
-    .content-section p {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
+      padding: 20px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
+  <header>
+    
+    <h1>Proficient Professionals Inc.</h1>
+  
+    <p>Empowering Businesses with Strategic Technology Leadership</p>
+  </header>
 
-<header>
-  <h1>Prishant Mantrao</h1>
-  <p class="tagline">Empowering Businesses with Strategic Technology Leadership</p>
-</header>
+  <section class="intro">
+    <h2>About Us</h2>
+    <p>
+      We help organizations scale and succeed through strategic technology leadership, architecture modernization, cloud optimization, and digital transformation.
+    </p>
+  </section>
 
-<section id="services">
-  <h2>Fractional CTO Services Tailored to Your Needs</h2>
-  <div class="content-section">
-    <div class="service">
-      <h3>Technology Strategy Development</h3>
-      <p>Crafing and executing strategies that drive operational efficiency, enhance customer experiences, and fuel growth.</p>
-    </div>
-    <div class="service">
-      <h3>Team Leadership</h3>
-      <p>Building and leading high-performing teams focused on innovation and continuous improvement.</p>
-    </div>
-    <div class="service">
-      <h3>Cloud Adoption & Optimization</h3>
-      <p>Executing cloud migration strategies while optimizing costs, automation, security, and resilience.</p>
-    </div>
-    <div class="service">
-      <h3>Scalable Architecture</h3>
-      <p>Designing robust, scalable technology platforms to support business expansion and long-term goals.</p>
-    </div>
-    <div class="service">
-      <h3>Digital Transformation</h3>
-      <p>Modernizing legacy systems and driving digital transformation for enhanced competitiveness and customer satisfaction.</p>
-    </div>
-    <div class="service">
-      <h3>AI Adoption and Integration</h3>
-      <p>Identifying AI opportunities and integrating intelligent tools tailored to meet unique business needs.</p>
-    </div>
-  </div>
-</section>
+  <section class="fcto">
+    <h2>Meet Our Fractional CTO</h2>
+    <p><strong>Prishant Mantrao</strong> is a product-centric technology leader with over 20 years of experience in driving technology strategy, architecture, and product development for high-growth companies. Known for fostering innovation, building high-performing teams, and achieving operational excellence, Prishant combines technical expertise with business acumen to deliver measurable results. From reducing costs through strategic optimizations to leading transformative technology initiatives, Prishant is dedicated to helping businesses scale and succeed.</p>
+  </section>
 
-<section id="engagement-models">
-  <h2>Engagement Models to Match Your Needs</h2>
-  <div class="content-section">
-    <div class="engagement-model">
-      <h3>Sounding Board</h3>
-      <p>(2-5 hrs/week) On-demand guidance for founders or CTOs. Get strategic advice, technical reviews, or a second opinion on key decisions.</p>
-    </div>
-    <div class="engagement-model">
-      <h3>Involved Partner</h3>
-      <p>(5-10 hrs/week) Strategic role addressing critical areas like technology strategy, product roadmapping, process optimization, and technical assessments.</p>
-    </div>
-    <div class="engagement-model">
-      <h3>Fully Engaged Leader</h3>
-      <p>(20 hrs/week) A deeply involved partner to drive strategic initiatives, lead teams, scale operations, and implement transformative practices.</p>
-    </div>
-    <div class="engagement-model">
-      <h3>Project Based</h3>
-      <p>Focused expertise to achieve specific objectives such as cloud implementation, AI integration, product strategy, or platform architecture design.</p>
-    </div>
-  </div>
-</section>
+  <section class="benefits">
+    <h2>Services Offered</h2>
+    <div class="grid-2col">
+      <div class="card">
+       <h3>✔ Technology Strategy Development</h3>
+       <p>Crafing and executing strategies that drive operational efficiency, enhance customer experiences, and fuel growth.</p>
+      </div>
 
-<section id="who-can-benefit">
+      <div class="card">
+        <h3>✔ Team Leadership</h3>
+        <p>Building and leading high-performing teams focused on innovation and continuous improvement.</p>
+      </div>
+      <div class="card">
+        <h3>✔ Cloud Adoption & Optimization</h3>
+        <p>Executing cloud migration strategies while optimizing costs, automation, security, and resilience.</p>
+      </div>
+      <div class="card">
+        <h3>✔ Scalable Architecture Design</h3>
+        <p>Designing robust, scalable technology platforms to support business expansion and long-term goals.</p>
+      </div>
+      <div class="card">
+        <h3>✔ Digital Transformation Leadership</h3>
+        <p>Modernizing legacy systems and driving digital transformation for enhanced competitiveness and customer satisfaction.</p>
+      </div>
+      <div class="card">
+        <h3>✔ AI Adoption and Integration</h3>
+        <p>Identifying AI opportunities and integrating intelligent tools tailored to meet unique business needs.</p>
+      </div>
+
+  
+      <div class="card">
+        <h3>✔ M&A Tech Integrations & Investment Oversight</h3>
+        <p>Provide expert oversight on technology investments and seamless M&A technology integrations.</p>
+      </div>
+
+      <div class="card">
+        <h3>✔Risk Mitigation and Compliance</h3>
+        <p>Align technology initiatives with business objectives, ensuring security and minimizing risks.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="benefits">
+    <h2>Expertise & Impact Areas</h2>
+    <div class="grid-3col">
+      <div class="card">Healthcare & Health Tech</div>
+      <div class="card">E-Commerce & SaaS Platforms</div>
+      <div class="card">B2B & B2B2C Models</div>
+      <div class="card">Digital Transformation</div>
+      <div class="card">Operational Efficiency & Automation</div>
+      <div class="card">Platform Scalability & Reliability</div>
+      <div class="card">Cost Optimization & Risk Mitigation</div>
+    </div>
+  </section>
+
+
+  <section class="benefits">
+    <h2>Featured Work</h2>
+    <div class="grid-3col">
+      <div class="card">Led major platform modernization projects reducing infrastructure costs by 25–30% through cloud elasticity, automation, and right-sizing strategies.</div>
+      <div class="card">Defined multi-year technology strategies that aligned with product vision, improved time to market, and built strong engineering culture.</div>
+      <div class="card">Successfully integrated multiple technology stacks during acquisitions, creating unified systems and consistent development practices.</div>
+      <div class="card">Improved uptime and platform resilience to meet seasonal demand for high-volume platforms with 99.99% reliability.</div>
+    </div>
+  </section>
+
+
+
+
+<section class="benefits">
   <h2>Who Can Benefit?</h2>
   <div class="content-section">
-    <p>• High-Growth Startups & Scale-Ups: Ready to scale technology platforms and accelerate growth.</p>
-    <p>• Businesses Undergoing Digital Transformation: Looking to modernize systems and adopt cutting-edge solutions.</p>
-    <p>• Companies Seeking Technology Modernization: Aiming to enhance operational efficiency and performance.</p>
-    <p>• Organizations in Need of Strategic Leadership: Requiring seasoned technology guidance to navigate complex challenges.</p>
+    <p>✔ High-Growth Startups & Scale-Ups: Ready to scale technology platforms and accelerate growth.</p>
+    <p>✔ Businesses Undergoing Digital Transformation: Looking to modernize systems and adopt cutting-edge solutions.</p>
+    <p>✔ Companies Seeking Technology Modernization: Aiming to enhance operational efficiency and performance.</p>
+    <p>✔ Organizations in Need of Strategic Leadership: Requiring seasoned technology guidance to navigate complex challenges.</p>
   </div>
 </section>
 
-<section id="contact">
-  <h2>Let's Work Together</h2>
-  <p>If you’re ready to elevate your technology operations, overcome growth challenges, and achieve your business goals, let’s connect!</p>
-  <a href="mailto:prishant@proficient-professionals.com" class="btn">Contact Today to Explore Opportunities</a>
+ <section class="benefits">
+  <h2>Why Choose a Fractional CTO?</h2>
+  <p>
+    A fractional CTO offers seasoned leadership without the cost and commitment of a full-time executive — ideal for startups, scale-ups, or organizations in transformation.
+  </p>
+  <table class="table-style">
+    <tr>
+      <th></th>
+      <th>Fractional CTO</th>
+      <th>Full-Time CTO</th>
+    </tr>
+    <tr>
+      <td>Cost Efficiency</td>
+      <td>✔ Budget-friendly</td>
+      <td>✖ High salary + equity</td>
+    </tr>
+    <tr>
+      <td>Flexibility</td>
+      <td>✔ Scalable hours</td>
+      <td>✖ Full-time commitment</td>
+    </tr>
+    <tr>
+      <td>Speed to Impact</td>
+      <td>✔ Rapid onboarding and delivery</td>
+      <td>✖ Slower integration</td>
+    </tr>
+    <tr>
+      <td>Strategic Focus</td>
+      <td>✔ High-value, goal-driven execution</td>
+      <td>✔ Depends on scope</td>
+    </tr>
+    <tr>
+      <td>Long-Term Cost</td>
+      <td>✔ Variable and controllable</td>
+      <td>✖ Fixed and ongoing</td>
+    </tr>
+  </table>
 </section>
 
-<footer>
-  <p>© 2025 Prishant Mantrao | Proficient Professionals Inc.</p>
-  <p>Phone: 614-352-4921 | Email: prishant@proficient-professionals.com</p>
-  <p><a href="https://linkedin.com/in/prishant-mantrao" target="_blank" class="btn">LinkedIn</a></p>
-</footer>
 
+  <section class="benefits">
+    <h2>Engagement Models</h2>
+    <table class="table-style">
+      <tr>
+        <th>Model</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Sounding Board (2–5 hrs/week)</td>
+        <td>On-demand strategic advice and technical reviews for founders and CTOs.</td>
+      </tr>
+      <tr>
+        <td>Involved Partner (5–10 hrs/week)</td>
+        <td>Focused collaboration on technology strategy, team planning, and product direction.</td>
+      </tr>
+      <tr>
+        <td>Fully Engaged Leader (20 hrs/week)</td>
+        <td>Hands-on leadership for technology execution, team management, and transformation initiatives.</td>
+      </tr>
+      <tr>
+        <td>Project/Outcome-Based</td>
+        <td>Specific engagements around AI integration, cloud architecture, or digital modernization.</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="cta">
+    <h2>Let’s Work Together</h2>
+    <p>Ready to elevate your technology operations? Connect with Prishant Mantrao today.</p>
+    <a href="mailto:prishant@proficient-professionals.com">Contact Us</a>
+  </section>
+
+  <footer>
+    <p>Proficient Professionals Inc. | Prishant Mantrao | Email: prishant@proficient-professionals.com | LinkedIn: linkedin.com/in/prishant-mantrao</p>
+  </footer>
 </body>
 </html>
